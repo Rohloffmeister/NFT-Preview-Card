@@ -9,7 +9,17 @@ body{
     height: 100%;
     background-color: hsl(216, 55%, 11%);
     font-family: "Outfit";
+   
+    
 }
+
+html,body 
+{
+    height:100%;
+    margin:0;
+    padding:0
+}
+
 
 main{
    background-color: hsl(214, 50%, 16%);
