@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: hsl(216, 55%, 11%);
+    font-family: "Outfit";
+}
+
+main{
+   background-color: hsl(214, 50%, 16%);
+   color: white;
+   position: absolute;
+   width: 20%;
+   height: 60%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   border-radius: 20px;
+   min-width: 330px;
+   min-height: fit-content;
+   margin-bottom: 50px;
+}
+.main-img{
+    width: calc(100% - 40px);
+    margin-top: 20px;
+    
+}
+.main-img > img{
+width: 100%;
+border-radius: 20px;
+}
+.hover-filter{
+    position:absolute;
+    top: 0;
+    background-color:hsla(178, 100%, 50%,40%) ;
+    width: calc(100% - 40px);
+    margin-top: 20px;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    opacity: 0;
+    transition: ease-out opacity 200ms;
+}
+
+.hover-filter:hover{
+    display: flex;
+    opacity: 1;
+}
+
+
+.creator{
+    width: 90%;
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    border-top: 1px hsl(215, 32%, 27%) solid;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+.creator img{
+    outline: 1px white solid;
+    border-radius: 50px;
+    width: 40px;
+    margin-right: 15px;
+}
+.creator p {
+    color: hsl(215, 51%, 70%);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    ;
+    width: 90%;
+}
+.stats .cost{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    color: hsl(178, 100%, 50%);
+}.stats .cost img{
+    margin-right: 5px;
+}
+
+.stats .time-left{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+
+}
+.stats .time-left img{
+    margin-right: 5px;
+    
+}
+
+.username{
+    color: white;
+}
+
+.title{
+    text-align: left;
+    width: 90%;
+    font-size: 1.4rem;
+}
+
+.description{
+    width: 90%;
+    color: hsl(215, 51%, 70%);
+    margin-top: 0;
+    font-size: 1.1rem;
+}
